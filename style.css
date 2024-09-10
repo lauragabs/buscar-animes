@@ -131,3 +131,8 @@ footer {
 .resultados-pesquisa::-webkit-scrollbar-track {
     background-color: none;
 }
+
+/* Estilo da mensagem Busca vazia e Busca não  encontrada */
+.mensagem {
+    color: #fff; /* Fonte branca */
+}
