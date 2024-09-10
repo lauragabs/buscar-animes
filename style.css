@@ -1,0 +1,133 @@
+/* Define que a altura do documento será 100%, garantindo que o layout ocupe toda a tela */
+html, body {
+    height: 100%;
+}
+
+/* Estilo geral do corpo da página, incluindo a imagem de fundo e centralização do conteúdo */
+body {
+    background-image: url('https://cdnb.artstation.com/p/assets/images/images/067/077/483/large/moe-wanders-your-name-web.jpg?1694502854');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilo do título principal da página */
+h1 {
+    font-size: 2.5rem;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 0.4rem;
+    text-shadow: 
+        2px 2px 4px rgba(0, 0, 0, 0.5),  /* Sombra com leve transparência */
+        -2px -2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+/* Centralização e espaçamento das seções */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+/* Estilo do campo de input para pesquisa */
+section input {
+    width: 30rem;
+    border: none;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    margin-bottom: 1rem;
+    color: #45474B;
+    font-size: 1rem;
+    box-sizing: border-box; /* Garante que padding seja incluído nas dimensões totais */
+}
+
+/* Estilo do botão de busca */
+section button {
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 1.5rem;
+    background-color: #30475E;
+    color: #F5F7F8;
+    font-size: 1rem;
+    cursor: pointer; /* Altera o cursor ao passar sobre o botão */
+}
+
+/* Efeito de hover no botão de busca */
+section button:hover {
+    background-color: #30475E;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra ao passar o mouse */
+}
+
+/* Estilo da área onde os resultados de pesquisa serão exibidos */
+.resultados-pesquisa {
+    width: 60rem;
+    height: 46vh;
+    overflow-y: auto; /* Permite rolagem vertical se o conteúdo exceder a altura */
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 0.6rem;
+}
+
+/* Estilo de cada resultado de pesquisa */
+.item-resultado {
+    display: flex;
+    align-items: flex-start;
+    background: #FFFFFF;
+    border-radius: 0.6rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona sombra ao redor do resultado */
+}
+
+/* Estilo da imagem de cada anime nos resultados */
+.item-resultado img {
+    width: 200px;
+    height: 200px;
+    margin-right: 1rem;
+}
+
+/* Estilo da descrição de cada anime */
+.item-resultado .descricao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Estilo do título de cada anime */
+.item-resultado h2 {
+    font-size: 1.5rem;
+    color: #222831;
+    margin-bottom: 5px;
+}
+
+/* Estilo do rodapé */
+footer {
+    background-color: #F5F7F8;
+    text-align: center;
+    padding: 0;
+    width: 100%;
+    position: absolute; /* Fixa o rodapé na parte inferior da página */
+    bottom: 0;
+    font-size: 1rem;
+}
+
+/* Estilo da barra de rolagem dentro da área de resultados */
+.resultados-pesquisa::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Estilo do "polegar" da barra de rolagem */
+.resultados-pesquisa::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 5px;
+}
+
+/* Estilo da "trilha" da barra de rolagem */
+.resultados-pesquisa::-webkit-scrollbar-track {
+    background-color: none;
+}
