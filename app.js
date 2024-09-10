@@ -10,7 +10,7 @@ function pesquisar() {
 
     // Se o campo de pesquisa estiver vazio, exibe uma mensagem de busca vazia
     if (campoPesquisa === "") {
-        section.innerHTML = "<p>Busca vazia</p>";
+        section.innerHTML = '<p class="mensagem">Busca vazia</p>';
         return;
     }
 
@@ -38,7 +38,7 @@ function pesquisar() {
 
     // Se nenhum resultado foi encontrado, exibe uma mensagem
     if (!resultados) {
-        resultados = "<p>Nada foi encontrado</p>";
+        resultados = '<p class="mensagem">Nada foi encontrado</p>';
     }
 
     // Insere os resultados na seção de pesquisa
